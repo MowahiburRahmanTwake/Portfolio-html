@@ -13,4 +13,11 @@ HTML Learnings
     -Browser: Google chrome
     - Version Control: Git and Github
 
-6. Basic Structure of HTML
+6. Basic Structure of HTML 
+  -head, body
+7. Basic Tag, Styling, Debuagging
+  -tag? type of tags
+  -attribute
+  -element, content
+  -Debugging
+8. Basic Tag,  
