@@ -6,12 +6,91 @@
     <title>Document</title>
 </head>
 <body>
-    <head>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About Me</a>  
+            <li>
+                <a href="#skills">My Skills</a>
+            </li>
+            <li>
+                <a href="#project"> My project</a>  
+            <li>
+                <a href="#contact">Contract</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Selection intro -->
+    <head id="intro">
         <h1>Md. Mowahibur Rahman Twake</h1>
         <p>Web & Python Developer </p>
+        <img src="./images/twake.jpg" alt="Md. Mowahibur Rahman Twake" height="300px" width="300px">
         <hr>
     </head>
- 
+   <!-- Section: About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Education: </strong> BSc. in CSE</p>
+    </section>
+  
+<!-- Section: Skills -->
+     <section id="skills">
+        <h2>Skills</h2>
+       <table border="1", cellspacing="0">
+              <tr>
+                <th>Technology	</th>
+                <th>Proficiency	</th>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Expart</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Expart</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+              </tr>
+       </table>
+    
+    </section>
+ <!-- Section: Project -->
+    <section id="project">
+        <h2>Project</h2>
+        <ol>
+            <li> E-commrerce website</li>
+            <li> Blog website</li>
+        </ol>
+    </section>
+    <!-- Section: Contact -->
+     <section id="contact">
+        <h2>Contract Me</h2>
+       <form>
+              <div>
+                <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              </div>
+              <div>
+                <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Send</button>
+              <button type="reset">Clear</button>
+       </form>
+     </section>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright reserved by Twake 2025</p>
+        <a href="tle:01309080573">Call Me</a>
+        <a href="mailto:twake.edu@gmail.com">Email Me</a>
+    </footer>
     
 </body>
 </html>
