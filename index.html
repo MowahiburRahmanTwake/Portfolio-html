@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Twake, Protfolio, Web Developer, Python Developer">
+    <meta name="description" content="Twake is a web and python developer. He is expert in HTML, CSS, JavaScript, Python. He has developed many website and software.">
     <title>Document</title>
-</head>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font aswome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      body{
+        background:rgb(183, 185, 181) ;
+        font-family: 'Roboto', sans-serif;
+        
+      }
+    </style>
+  </head>
 <body>
     <!-- Navigation bar -->
     <nav>
@@ -44,19 +62,49 @@
               </tr>
               <tr>
                 <td>HTML</td>
-                <td>Expart</td>
+                <td rowspan="2">Expart</td>
               </tr>
               <tr>
                 <td>CSS</td>
-                <td>Expart</td>
+                
               </tr>
               <tr>
                 <td>JavaScript</td>
                 <td>Intermediate</td>
               </tr>
        </table>
-    
+      <div>
+        <div>
+          <label for="htmlProgress">HTML</label>
+          <progress id="htmlProgress" value="80"
+          max="100">80%</progress>
+         </div>
+          <div>
+            <label for="cssProgress">CSS</label>
+            <progress id="cssProgress" value="90"
+            max="100">90%</progress>
+          </div>
+          <div>
+            <label for="jsProgress">JavaScript</label>
+            <progress id="jsProgress" value="70"
+            max="100">70%</progress>
+          </div>
+          <div>
+            <label for="pythonProgress">Python</label>
+            <progress id="pythonProgress" value="60"
+            max="100">60%</progress>
+          </div>
+      
+      </div>
+
+      <div>
+        <h3>Experience Level</h3>
+        <label for="experinecelevel">Experience:
+          <meter id="experinecelevel" max="5" min="0" value="2">2 years</meter>
+        </label>
+      </div>
     </section>
+
  <!-- Section: Project -->
     <section id="project">
         <h2>Project</h2>
@@ -64,11 +112,18 @@
             <li> E-commrerce website</li>
             <li> Blog website</li>
         </ol>
+        <video width="320" height="240" controls>
+            <source src="assets/video/umr.mp4"
+          type="video/mp4">
+          your browser does not support the video tag.
+        </video>
     </section>
     <!-- Section: Contact -->
      <section id="contact">
         <h2>Contract Me</h2>
-       <form>
+       <form 
+        action="https://formspree.io/f/xldgqnbb"
+        method="POST">
               <div>
                 <label for="name">Name:</label>
               <input type="text" id="name" name="name" required>
@@ -78,9 +133,36 @@
               <input type="email" id="email" name="email" required>
               </div>
               <div>
-                <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" min="18" max="23"  required>
               </div>
+              <div>
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" 
+                pattern="https://.*+">
+              </div>
+              <div>
+                <label for="image">Upload image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+              </div>
+              <div>
+                <label for="subject">Subject:</label>
+               <select name="subject" id="subject">
+                <option >Web Developer</option>
+                <option >Python Developer</option>
+                <option >Android Developer</option>
+               </select>
+               
+
+               <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" 
+                cols="20"
+                rows="10"></textarea>
+              </div>
+              
+
+            
               <button type="submit">Send</button>
               <button type="reset">Clear</button>
        </form>
@@ -90,6 +172,21 @@
         <p>Copyright reserved by Twake 2025</p>
         <a href="tle:01309080573">Call Me</a>
         <a href="mailto:twake.edu@gmail.com">Email Me</a>
+        <div>
+          <h3>Follow Me</h3>
+          <ul>
+            <li>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                Visit my Facebook 
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58272.556574974544!2d89.218882687723!3d24.100272128649998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe82d95ecb5067%3A0xff31f16653fc9cd3!2sDebottar!5e0!3m2!1sen!2sbd!4v1740849935026!5m2!1sen!2sbd" width="300" height="250" style="border:0;" title="Debuttor" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
     </footer>
     
 </body>
